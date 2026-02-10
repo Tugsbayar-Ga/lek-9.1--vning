@@ -1,17 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script defer src="./script.js"></script>
+    <title>Javascript Övning 1</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-<h1> Javascript Övning1</h1>
-<p> Vi ska hämta och ändra på html-element</p>
+
+<h1>Javascript Övning 1</h1>
+<p>Vi ska hämta och ändra på html-element</p>
 <p class="text">Vi ska lägga till html-element också</p>
-<ul>
-</ul>
+
+<ul></ul>
+
+<button type="button" onclick="växla_tema()">Växla Tema</button>
+
+<div>
+    <label>
+        Skriv:
+        <input type="text" id="ny_text">
+    </label>
+    <button type="button" onclick="lägg_till()">Ändra Text</button>
+</div>
+
+<div>
+    <img class="bilden" src="./bild/album1.jpg" alt="album 1">
+    <button type="button" onclick="byt_bild('./bild/album1.jpg')">Bild 1</button>
+    <button type="button" onclick="byt_bild('./bild/album2.jpg')">Bild 2</button>
+</div>
 </body>
 </html>
